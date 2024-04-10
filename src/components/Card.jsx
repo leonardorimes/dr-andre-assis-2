@@ -1,10 +1,15 @@
+import { useState } from "react";
 import "./Card.css";
 
-const Card = ({ img, content }) => {
+
+
+const Card = ({ img, children }) => {
+
+   const [isOpen, setIsOpen] = useState(false)
   return (
-    <div className="cardContainer">
-      <img src={`./src/assets/imagecards/${img}`} alt="" />
-      <span>{content}</span>
+    <div className="card">
+      <img src={`./src/assets/imagecards/${img}`} alt="" onClick={() => setIsOpen(!isOpen)}/>
+      {isOpen &&<span>{children}</span>}
     </div>
   );
 };
