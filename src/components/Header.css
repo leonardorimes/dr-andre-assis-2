@@ -1,0 +1,15 @@
+header {
+  background-color: #125133;
+  width: 100%;
+}
+
+.headerImgContainer {
+  display: flex;
+
+  justify-content: center;
+}
+
+.headerImgContainer img {
+  max-width: 180px;
+  text-align: center;
+}

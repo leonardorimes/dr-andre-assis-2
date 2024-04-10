@@ -1,0 +1,20 @@
+.cardContainer {
+  width: 100%;
+
+  /* display: flex;
+  flex-direction: column; */
+  margin-top: 1rem;
+}
+
+.cardContainer img {
+  max-width: 28rem;
+  cursor: pointer;
+}
+
+.cardContainer img {
+  max-width: 28rem;
+}
+
+.cardContainer span {
+  display: none;
+}
